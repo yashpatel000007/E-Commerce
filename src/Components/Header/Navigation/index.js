@@ -3,6 +3,7 @@ import { IoIosMenu } from 'react-icons/io';
 import { FaAngleDown } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { FaAngleRight } from "react-icons/fa6";
 
 const Navigation = ()=>{
 
@@ -21,17 +22,75 @@ const Navigation = ()=>{
 
                         <div className={`sidebarNav ${isopenSidebarVal===true ? 'open' : ''}`}>
                             <ul>
-                                <li>
-                                    <Link to="/"><Button>Men</Button></Link>
-                                    <Link to="/"><Button>Women</Button></Link>
-                                    <Link to="/"><Button>Beauty</Button></Link>
-                                    <Link to="/"><Button>Watches</Button></Link>
-                                    <Link to="/"><Button>Kids</Button></Link>
-                                    <Link to="/"><Button>Gift</Button></Link>
-                                    <Link to="/"><Button>Beauty</Button></Link>
-                                    <Link to="/"><Button>Watches</Button></Link>
-                                    <Link to="/"><Button>Kids</Button></Link>
-                                    <Link to="/"><Button>Gift</Button></Link>
+                                <li><Link to="/"><Button>Men <FaAngleRight className='ml-auto'/></Button></Link>
+                                    <div className='submenu'>
+                                        <Link to="/"><Button>Clothing</Button></Link>
+                                        <Link to="/"><Button>Footware</Button></Link>
+                                        <Link to="/"><Button>Watches</Button></Link>
+                                    </div>
+                                </li>
+                                <li><Link to="/"><Button>Women <FaAngleRight className='ml-auto'/></Button></Link>
+                                    <div className='submenu'>
+                                        <Link to="/"><Button>Clothing</Button></Link>
+                                        <Link to="/"><Button>Footware</Button></Link>
+                                        <Link to="/"><Button>Watches</Button></Link>
+                                    </div>
+                                </li>
+                                <li><Link to="/"><Button>Beauty</Button></Link>
+                                    <div className='submenu'>
+                                        <Link to="/"><Button>Clothing</Button></Link>
+                                        <Link to="/"><Button>Footware</Button></Link>
+                                        <Link to="/"><Button>Watches</Button></Link>
+                                    </div>
+                                </li>
+                                <li><Link to="/"><Button>Watches</Button></Link>
+                                    <div className='submenu'>
+                                        <Link to="/"><Button>Clothing</Button></Link>
+                                        <Link to="/"><Button>Footware</Button></Link>
+                                        <Link to="/"><Button>Watches</Button></Link>
+                                    </div>
+                                </li>
+                                <li><Link to="/"><Button>Kids</Button></Link>
+                                    <div className='submenu'>
+                                        <Link to="/"><Button>Clothing</Button></Link>
+                                        <Link to="/"><Button>Footware</Button></Link>
+                                        <Link to="/"><Button>Watches</Button></Link>
+                                    </div>
+                                </li>
+                                <li><Link to="/"><Button>Gift</Button></Link>
+                                    <div className='submenu'>
+                                        <Link to="/"><Button>Clothing</Button></Link>
+                                        <Link to="/"><Button>Footware</Button></Link>
+                                        <Link to="/"><Button>Watches</Button></Link>
+                                    </div>
+                                </li>
+                                <li><Link to="/"><Button>Beauty</Button></Link>
+                                    <div className='submenu'>
+                                        <Link to="/"><Button>Clothing</Button></Link>
+                                        <Link to="/"><Button>Footware</Button></Link>
+                                        <Link to="/"><Button>Watches</Button></Link>
+                                    </div>
+                                </li>
+                                <li><Link to="/"><Button>Watches</Button></Link>
+                                    <div className='submenu'>
+                                        <Link to="/"><Button>Clothing</Button></Link>
+                                        <Link to="/"><Button>Footware</Button></Link>
+                                        <Link to="/"><Button>Watches</Button></Link>
+                                    </div>
+                                </li>
+                                <li><Link to="/"><Button>Kids</Button></Link>
+                                    <div className='submenu'>
+                                        <Link to="/"><Button>Clothing</Button></Link>
+                                        <Link to="/"><Button>Footware</Button></Link>
+                                        <Link to="/"><Button>Watches</Button></Link>
+                                    </div>
+                                </li>
+                                <li><Link to="/"><Button>Gift</Button></Link>
+                                    <div className='submenu'>
+                                        <Link to="/"><Button>Clothing</Button></Link>
+                                        <Link to="/"><Button>Footware</Button></Link>
+                                        <Link to="/"><Button>Watches</Button></Link>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
